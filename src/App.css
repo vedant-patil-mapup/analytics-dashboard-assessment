@@ -1,0 +1,59 @@
+/* src/App.css */
+
+/* Overall container for the dashboard */
+.dashboard-container {
+  padding: 20px;
+}
+
+/* Styles for the header */
+.dashboard-header {
+  background-color: #112d4e;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for metric cards */
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Styles for the charts container */
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Styles for Vehicle Type Count component */
+.vehicle-type-count {
+  background-color: #f8f9fa; /* Light background for the component */
+  border: 1px solid #dee2e6; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding around the content */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin: 10px; /* Margin for spacing */
+}
+
+.vehicle-type-title {
+  color: #343a40; /* Darker title color */
+  margin-bottom: 15px; /* Space below the title */
+  text-align: center; /* Center the title */
+}
+
+.vehicle-type-chart {
+  max-width: 400px; /* Limit the maximum width of the chart */
+  margin: 0 auto; /* Center the chart */
+}
+
+.comparison-chart-container {
+  width: 36%; /* Adjust width as needed */
+  height: 400px;
+  margin-top: 20px;
+}
