@@ -1,45 +1,107 @@
-# MapUp - Analytics Dashboard Assessment
 
-## Overview
+```markdown
+# Electric Vehicle Dashboard
 
-The objective of this assessment is to analyze the provided Electric Vehicle (EV) population data and create a frontend dashboard that visualizes key insights about the dataset. This repository contains the necessary data and instructions for you to demonstrate your analytical and dashboard creation skills. Feel free to use any tech stack you want to create the dashboard.
+## Description
 
-## Dataset
+This project is an Electric Vehicle Dashboard built using React. The dashboard allows users to visualize data related to electric vehicle populations, models, and charging stations. It features a responsive sidebar for easy navigation and a professional sign-in form with background image support.
 
-The Electric Vehicle Population dataset is available in the [Electric Vehicle Population Data (CSV)](./data-to-visualize/Electric_Vehicle_Population_Data.csv) within this repository, for more information about the dataset visit [kaggle dataset](https://www.kaggle.com/datasets/willianoliveiragibin/electric-vehicle-population).
+## Technologies Used
 
-**Note:** We've reduced the dataset in the repository to keep the data size small in the frontend bundle.
+- React
+- Tailwind CSS
+- Lucide Icons
+- Firebase (for authentication)
 
-## Tasks
+## Features
 
-### Dashboard Creation:
+- User authentication with Firebase
+- Responsive design with Tailwind CSS
+- Sidebar navigation with icons
+- Sign-in form with a background image
+- Animated transition effects
 
-- Create a frontend dashboard that presents key insights from the dataset.
-- Design the dashboard to effectively communicate important metrics and visualizations.
-- Include visual representations such as charts, graphs, or tables to showcase trends and relationships in the data.
-- Ensure the dashboard is user-friendly and intuitive for exploring the dataset.
+## Installation
 
-### Deployment:
+### Prerequisites
 
-- Deploy your frontend dashboard to a hosting platform of your choice.
-- Make sure the dashboard is publicly accessible.
+Make sure you have the following installed on your machine:
 
-## Evaluation Criteria
+- Node.js (version 14 or higher)
+- npm (Node package manager)
 
-Your submission will be evaluated based on:
+### Steps
 
-- **Analytical Depth:** The depth of your analysis and insights derived from the dataset.
-- **Dashboard Design:** Clarity, aesthetics, and usability of the frontend dashboard.
-- **Insightfulness:** Effectiveness in conveying key insights about electric vehicles.
+1. **Clone the repository:**
 
-## Submission Guidelines
+   ```bash
+   git clone https://github.com/your-username/electric-vehicle-dashboard.git
+   ```
 
-- Fork this repository to your GitHub account.
-- Complete your analysis and create the frontend dashboard.
-- Deploy the dashboard to a hosting platform.
-- Update this [README.md](README.md) file with the URL to your live dashboard.
-- **Repository Access:** Keep your repository private to avoid visibility by other candidates. Add the following email addresses as collaborators to the repository, these are our internal emails and will be evaluating your assessment:
-  - vedantp@mapup.ai
-  - ajayap@mapupa.ai
-  - divyanshs@mapup.ai
-- Finally, please fill out the google form that you received via email to submit the assessment for review.
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd electric-vehicle-dashboard
+   ```
+
+3. **Install the dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Set up Firebase:**
+
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Add a web application and copy the Firebase configuration.
+   - Replace the configuration in `firebaseConfig.js` with your own.
+
+5. **Run the application:**
+
+   ```bash
+   npm start
+   ```
+
+   The application will be available at `http://localhost:3000`.
+
+## Usage
+
+- **Sign Up:** Use the sign-up form to create a new account.
+- **Login:** Navigate to the login page to access your account.
+- **Dashboard:** Once logged in, you can view the dashboard with electric vehicle data.
+
+## Troubleshooting
+
+If you encounter the following errors:
+
+### Git RPC Failed Error
+
+- **Error Message:** `error: Git: RPC failed; HTTP 400 curl 92 HTTP/2 stream 7 was not closed cleanly: CANCEL (err 8)`
+  
+  **Solutions:**
+  1. Check your network connection.
+  2. Increase Git buffer size:
+     ```bash
+     git config --global http.postBuffer 524288000
+     ```
+  3. Use SSH instead of HTTPS.
+  4. Check the repository URL and permissions.
+  5. Clear the Git credential cache:
+     ```bash
+     git credential-cache exit
+     ```
+  6. Disable HTTP/2:
+     ```bash
+     git config --global http.version HTTP/1.1
+     ```
+
+### Additional Notes
+
+- For styling, Tailwind CSS is used, and you can customize it as per your design preferences.
+- Make sure to handle errors and validations in the authentication process for a better user experience.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+```

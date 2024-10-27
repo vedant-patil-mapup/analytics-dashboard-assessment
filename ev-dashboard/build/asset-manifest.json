@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/electric-vehicle/static/css/main.0a4a22d2.css",
+    "main.js": "/electric-vehicle/static/js/main.c26015ba.js",
+    "static/media/Electric_Vehicle_Population_Data.csv": "/electric-vehicle/static/media/Electric_Vehicle_Population_Data.088f56c464959d5bab62.csv",
+    "static/media/animated-maps-electric-vehicle-charging-stations-and-us-interstates-2022_ZBpbC2uA.mp4": "/electric-vehicle/static/media/animated-maps-electric-vehicle-charging-stations-and-us-interstates-2022_ZBpbC2uA.0a27a3e33837509b3d60.mp4",
+    "static/media/pexel1.png": "/electric-vehicle/static/media/pexel1.c5fe9a41d99cd3b0ea34.png",
+    "static/media/pexels-taras-makarenko-188506-593172.jpg": "/electric-vehicle/static/media/pexels-taras-makarenko-188506-593172.2f9d392c197ececf2fca.jpg",
+    "static/media/evs.jpg": "/electric-vehicle/static/media/evs.ebedc35b0c7d82597b0f.jpg",
+    "static/media/pexel2.png": "/electric-vehicle/static/media/pexel2.3fe8ad62f1c54a480dde.png",
+    "static/media/tesla_car_PNG47.png": "/electric-vehicle/static/media/tesla_car_PNG47.0cad0acb8702239a1b60.png",
+    "static/media/Akhil.png": "/electric-vehicle/static/media/Akhil.2a41af9385ba3ecf870a.png",
+    "static/media/EV-scaled.jpg": "/electric-vehicle/static/media/EV-scaled.1db09be12dd014cc5bf0.jpg",
+    "index.html": "/electric-vehicle/index.html",
+    "main.0a4a22d2.css.map": "/electric-vehicle/static/css/main.0a4a22d2.css.map",
+    "main.c26015ba.js.map": "/electric-vehicle/static/js/main.c26015ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a4a22d2.css",
+    "static/js/main.c26015ba.js"
+  ]
+}
