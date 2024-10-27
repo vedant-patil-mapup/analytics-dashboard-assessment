@@ -1,0 +1,30 @@
+/* src/components/MetricCard.module.css */
+
+.metricCard {
+  background: linear-gradient(135deg, #608bc1 0%, #cbdceb 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #2c3e50;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 150px;
+  margin: 10px;
+}
+
+.metricCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
