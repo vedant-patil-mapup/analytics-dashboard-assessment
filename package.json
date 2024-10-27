@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "ag-grid-community": "^32.3.0",
+    "ag-grid-react": "^32.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
