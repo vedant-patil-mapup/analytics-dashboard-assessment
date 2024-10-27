@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  font-family: "Josefin Sans", sans-serif !important; 
+}
+/* App.css */
+
+.main {
+  display: flex;
+}
+
+.menuContainer {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.flex {
+  display: flex;
+}
+
+.w-10/12 {
+  width: 83.333333%;
+}
+
+.translate-x-full {
+  transform: translateX(100%);
+}
+
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.transition-opacity {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.bg-blue-500:hover {
+  background-color: #2563eb;
+}
+
+.bg-gray-900 {
+  background-color: #1f2937;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+/* App.css */
+
+.main {
+    display: flex;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.translate-x-0 {
+    transform: translateX(0);
+}
+
+.translate-x-full,
+.-translate-x-full {
+    transform: translateX(100%);
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.transition-transform {
+    transition: transform 0.3s ease-in-out;
+}
+
+.transition-opacity {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.bg-gray-900 {
+    background-color: #1f2937;
+}
+
+.w-64 {
+    width: 16rem;
+}
+
+.w-0 {
+    width: 0;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.bg-blue-500:hover {
+    background-color: #2563eb;
+}
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.car-display {
+  height: 400px;
+  background-color: #e71414;
+  border-radius: 8px;
+  position: relative;
+}
+
+.car-details {
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: #f8f5f5;
+  border-radius: 8px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circular-progress-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temp-bar {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
