@@ -3,7 +3,6 @@
 body {
   font-family: "Josefin Sans", sans-serif !important; 
 }
-/* App.css */
 
 .main {
   display: flex;
@@ -21,9 +20,6 @@ body {
   display: flex;
 }
 
-.w-10/12 {
-  width: 83.333333%;
-}
 
 .translate-x-full {
   transform: translateX(100%);
@@ -48,7 +44,6 @@ body {
 .rounded-full {
   border-radius: 9999px;
 }
-/* App.css */
 
 .main {
     display: flex;
