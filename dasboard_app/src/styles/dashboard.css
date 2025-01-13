@@ -1,0 +1,59 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.insights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 20px;
+}
+
+.insight-card {
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ff9800;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.insight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(255, 152, 0, 0.4);
+}
+
+.insight-card h2 {
+  margin-bottom: 15px;
+  color: #ff9800;
+  font-size: 1.5rem;
+}
+
+.insight-card p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.insight-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ff9800;
+}
+
+@media (max-width: 768px) {
+  .insights {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
+  .insight-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .insight-card p {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,106 @@
+.orders {
+  padding: 20px;
+  color: white;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start; /* Ensure content starts at the top */
+  position: relative; /* Required for absolute positioning of horizontal scrollbar */
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.filters select,
+.filters input {
+  background-color: #222;
+  color: white;
+  padding: 8px;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.table-container {
+  position: relative;
+  flex-grow: 1; /* Ensure it expands to take available space */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.table {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: black;
+  padding-bottom: 10px; /* Space for the horizontal scrollbar */
+  position: relative;
+  flex-grow: 1; /* Ensures the table stretches to take up available height */
+}
+
+.table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 1000px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #555;
+  color: white;
+  font-size: 14px;
+}
+
+.table th {
+  background-color: #333;
+}
+
+/* Custom scrollbar styling */
+.table::-webkit-scrollbar {
+  width: 10px; /* Vertical scrollbar width */
+  height: 10px; /* Horizontal scrollbar height */
+}
+
+.table::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.table::-webkit-scrollbar-track {
+  background: #222;
+}
+
+/* Positioning the horizontal scrollbar at the bottom of the screen */
+.orders::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #222; /* Background color of the scrollbar track */
+}
+
+/* Ensure the vertical scrollbar is styled the same as the horizontal one */
+.table::-webkit-scrollbar-vertical {
+  position: absolute;
+  right: 0;
+}
+
+/* Download button styling */
+.download-btn {
+  color: white;
+  background-color: #555;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #444;
+  align-self: flex-end;
+}
+
