@@ -1,6 +1,12 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+
+try:
+    import plotly.express as px
+    print("Plotly is successfully imported")
+except ModuleNotFoundError:
+    print("Plotly is not installed or cannot be found.")
+
 
 # Set up the Streamlit app
 st.set_page_config(page_title="EV Population Dashboard", layout="wide")
