@@ -46,3 +46,5 @@ Your submission will be evaluated based on:
 
 
 ### Deployed link: https://preeminent-narwhal-17cde1.netlify.app/
+
+## Run as  yarn dev
