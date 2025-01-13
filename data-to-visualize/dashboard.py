@@ -1,11 +1,6 @@
 import streamlit as st
 import pandas as pd
-
-try:
-    import plotly.express as px
-    print("Plotly is successfully imported")
-except ModuleNotFoundError:
-    print("Plotly is not installed or cannot be found.")
+import plotly.express as px
 
 
 # Set up the Streamlit app
@@ -33,8 +28,17 @@ if data_file:
         evs_by_year.columns = ["Model Year", "Count"]
         evs_by_year = evs_by_year.sort_values(by="Model Year")
 
+        print(evs_by_year.head())
+        print(evs_by_year.columns)
+
         st.subheader("EVs by Model Year")
-        fig = px.bar(evs_by_year, x="Model Year", y="Count", title="EVs by Model Year", text_auto=True)
+        fig = px.bar(
+    evs_by_year,
+    x="Model Year",
+    y="Count",
+    title="EVs by Model Year"
+)
+
         st.plotly_chart(fig, use_container_width=True)
     else:
         st.warning("Column 'Model Year' not found in the dataset.")
