@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Set up the Streamlit app
 st.set_page_config(page_title="EV Population Dashboard", layout="wide")
@@ -28,18 +28,13 @@ if data_file:
         evs_by_year.columns = ["Model Year", "Count"]
         evs_by_year = evs_by_year.sort_values(by="Model Year")
 
-        print(evs_by_year.head())
-        print(evs_by_year.columns)
-
         st.subheader("EVs by Model Year")
-        fig = px.bar(
-    evs_by_year,
-    x="Model Year",
-    y="Count",
-    title="EVs by Model Year"
-)
-
-        st.plotly_chart(fig, use_container_width=True)
+        fig, ax = plt.subplots(figsize=(10, 6))
+        sns.barplot(data=evs_by_year, x="Model Year", y="Count", palette="viridis", ax=ax)
+        ax.set_title("EVs by Model Year", fontsize=16)
+        ax.set_xlabel("Model Year", fontsize=14)
+        ax.set_ylabel("Count", fontsize=14)
+        st.pyplot(fig)
     else:
         st.warning("Column 'Model Year' not found in the dataset.")
 
@@ -49,8 +44,16 @@ if data_file:
         evs_by_make.columns = ["Make", "Count"]
 
         st.subheader("EV Distribution by Make")
-        fig = px.pie(evs_by_make, values="Count", names="Make", title="EV Distribution by Make", hole=0.4)
-        st.plotly_chart(fig, use_container_width=True)
+        fig, ax = plt.subplots(figsize=(8, 8))
+        ax.pie(
+            evs_by_make["Count"], 
+            labels=evs_by_make["Make"], 
+            autopct="%1.1f%%", 
+            startangle=140, 
+            colors=sns.color_palette("pastel")
+        )
+        ax.set_title("EV Distribution by Make", fontsize=16)
+        st.pyplot(fig)
     else:
         st.warning("Column 'Make' not found in the dataset.")
 
@@ -60,8 +63,13 @@ if data_file:
         evs_by_state.columns = ["State", "Count"]
 
         st.subheader("EV Distribution by State")
-        fig = px.bar(evs_by_state, x="State", y="Count", title="EV Distribution by State", text_auto=True)
-        st.plotly_chart(fig, use_container_width=True)
+        fig, ax = plt.subplots(figsize=(12, 6))
+        sns.barplot(data=evs_by_state, x="State", y="Count", palette="coolwarm", ax=ax)
+        ax.set_title("EV Distribution by State", fontsize=16)
+        ax.set_xlabel("State", fontsize=14)
+        ax.set_ylabel("Count", fontsize=14)
+        plt.xticks(rotation=45, ha="right")
+        st.pyplot(fig)
     else:
         st.warning("Column 'State' not found in the dataset.")
 
