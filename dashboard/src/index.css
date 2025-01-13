@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-100 font-sans;
+}
+
+.app {
+    @apply text-center p-4;
+}
+
+.dashboard {
+    @apply flex flex-col items-center;
+}
+
+.charts {
+    @apply flex flex-wrap justify-center gap-6 mt-8;
+}
+
+.chart {
+    @apply bg-white p-6 rounded-lg shadow-md;
+}
+
+.map-container {
+    @apply mt-8 w-full bg-white p-6 rounded-lg shadow-md;
+}
