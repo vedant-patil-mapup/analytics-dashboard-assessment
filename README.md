@@ -1,6 +1,6 @@
 # MapUp - Analytics Dashboard Assessment
 
-# Project - Link https://ev-analytics-dashboard-assignment.netlify.app/🔗
+# Project - Link https://ev-analytics-dashboard-assignment.netlify.app/
 
 ## Overview
 
