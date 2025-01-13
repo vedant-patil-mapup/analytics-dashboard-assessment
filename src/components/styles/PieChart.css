@@ -1,0 +1,14 @@
+.pie-chart-container {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 10px;
+
+}
+
+.pie-chart-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
