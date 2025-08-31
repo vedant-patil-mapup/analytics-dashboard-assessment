@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    display: block;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    place-items: normal;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .app-header{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Tab Navigation */
+  .tab-navigation {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1px;
+    height: 80px;
+  }
+  
+  .tab-navigation button {
+    padding: 0.5rem 1rem;
+    background-color: #f0f0f0;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline:none;
+    width: 20%;
+    height: 100%;
+  }
+  
+  .tab-navigation button.active {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+  }
+
+  .tab-navigation button:hover{
+    background-color: #92c7ff;
+    color: #fff;
+    border: none;
+
+  }
+  
+
+  /*table Pie*/
+
+  .dashboard-container {
+    margin:0 10px;
+    padding: 20px;
+  }
+  
+  /* Chart Section */
+  .chart-section {
+    text-align: center;
+  }
+  .chart-section h2{
+    margin-bottom: 0%;
+  }
+  
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .legend-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto); 
+    place-content: center;
+    margin: auto 0;
+    width:50%;
+    column-gap: 100px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .legend-color {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  
+  /* Table Section */
+  .table-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .ev-table {
+    width: calc(100% - 40px); 
+    margin: auto; 
+    border-collapse: collapse;
+  }
+  
+  .ev-table th,
+  .ev-table td {
+    padding: 10px;
+  }
+  
+  .ev-table th {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+  }
+  
+  .ev-table td {
+    text-align: center;
+  }
+  
+  .ev-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+
+
+
+  .pie-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* stats Cards */
+  .overview-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    
+   }
+  
+  .overview-card {
+    text-align: center;
+    background: white;
+    width: 30%;
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: inset 
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  }
+  
+  .overview-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  .overview-card p{
+    margin-top: 0px;
+  }
+  
+  /* Charts Section */
+  .charts-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  /* Table */
+  .ev-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  
+  .ev-table th,
+  .ev-table td {
+    padding: 10px;
+  }
+  
+  .ev-table th {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .ev-table td {
+    border-bottom: solid 1px #ddd;
+  }
+  

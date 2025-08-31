@@ -1,3 +1,19 @@
+
+This project is built using technologies React , Recharts, Vite, CSS.
+
+#To get started,
+clone the repository, install the dependencies, and run the development server.
+
+git clone  
+cd analytics-dashboard-main
+npm install  
+npm run dev 
+
+
+//run in port  http://localhost:5173/
+
+
+
 # MapUp - Analytics Dashboard Assessment
 
 ## Overview
