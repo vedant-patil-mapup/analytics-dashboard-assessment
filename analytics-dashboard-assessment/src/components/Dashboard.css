@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f7fa;
+    border-radius: 8px;
+  }
+  
+  .dashboard h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Filters Section */
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters select,
+  .filters input[type="range"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    width: auto;
+    max-width: 200px;
+  }
+  
+  .filters select {
+    width: 20%;
+  }
+  
+  .filters input[type="range"] {
+    width: 200px;
+  }
+  
+  .filters span {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Row Styles */
+  .row-1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .row-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+  }
+  
+  .row-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+  }
+  
+  .row-1 .chart,
+  .row-2 .chart,
+  .row-3 .chart {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .row-1 .chart {
+    width: 100%; 
+  }
+  
+  .row-2 .chart {
+    width: 48%; 
+  }
+  
+  .row-3 .chart {
+    width: 31%; 
+  }
+  
+  .chart-heading {
+    font-size: 1.75rem;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .row-1 .chart,
+  .row-2 .chart,
+  .row-3 .chart {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  
+    .filters select {
+      width: 100%;
+    }
+  
+    .chart-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .row-1 .chart,
+    .row-2 .chart,
+    .row-3 .chart {
+      width: 100%; 
+    }
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #444;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  .filters select:hover,
+  .filters input[type="range"]:hover {
+    border-color: #4caf50;
+  }
+  
+  .chart-container .chart:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
