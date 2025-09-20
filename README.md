@@ -1,3 +1,21 @@
+#Explore the live dashboard here: https://abhishekmap.netlify.app/
+
+This project is built using modern technologies React 18, Recharts, Vite, Tailwind CSS.
+
+#To get started,
+clone the repository, install the dependencies, and run the development server.
+
+git clone  
+cd analytics-dashboard  
+npm install  
+npm run dev 
+
+
+
+
+
+
+
 # MapUp - Analytics Dashboard Assessment
 
 ## Overview
