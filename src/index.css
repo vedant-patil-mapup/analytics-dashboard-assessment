@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tab-buttons {
+    display: flex;
+    border-bottom: 2px solid #5641f5;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color:white;
+  }
+  
+  .tab-button.active {
+    border-bottom: 2px solid #5641f5;
+    font-weight: bold;
+    color:white;
+    background-color: #5641f5;
+    border-radius: 10px;
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+  }
+  
+  @layer base {
+  :root {
+        --radius: 0.5rem;
+    }
+}
+  

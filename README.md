@@ -1,5 +1,7 @@
 # MapUp - Analytics Dashboard Assessment
 
+# Link for [live demo](https://ev-analytics-dashboard-11.vercel.app/)
+
 ## Overview
 
 The objective of this assessment is to analyze the provided Electric Vehicle (EV) population data and create a frontend dashboard that visualizes key insights about the dataset. This repository contains the necessary data and instructions for you to demonstrate your analytical and dashboard creation skills. Feel free to use any tech stack you want to create the dashboard.
@@ -39,7 +41,8 @@ Your submission will be evaluated based on:
 - Fork this repository to your GitHub account.
 - Complete your analysis and create the frontend dashboard.
 - Deploy the dashboard to a hosting platform.
-- Update this [README.md](README.md) file with the URL to your live dashboard.
+- Update this [README.md](README.md) file with the URL to your live dashboard. CHECKOUT :
+  [live demo](https://ev-analytics-dashboard-11.vercel.app/)
 - **Repository Access:** Keep your repository private to avoid visibility by other candidates. Add the following email addresses as collaborators to the repository, these are our internal emails and will be evaluating your assessment:
   - vedantp@mapup.ai
   - ajayap@mapup.ai
