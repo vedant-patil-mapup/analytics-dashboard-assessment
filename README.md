@@ -1,47 +1,53 @@
 # MapUp - Analytics Dashboard Assessment
 
-## Overview
+* EV Analytics Dashboard :
+An interactive analytics dashboard for exploring Electric Vehicle (EV) registration data with filtering, insights, and visualizations. The project is designed with performance, scalability, and user experience in mind.
 
-The objective of this assessment is to analyze the provided Electric Vehicle (EV) population data and create a frontend dashboard that visualizes key insights about the dataset. This repository contains the necessary data and instructions for you to demonstrate your analytical and dashboard creation skills. Feel free to use any tech stack you want to create the dashboard.
+🔗 Live Dashboard Link: https://evdataanalysis.netlify.app/
 
-### We encourage the use of AI and LLM tools for this assessment! However, you must understand what you're building and be able to explain your implementation decisions.
+* Features
 
-## Dataset
+1.  Advanced Filtering – Filter EV data by state, county, city, make, model, year, EV type, and more.
 
-The Electric Vehicle Population dataset is available in the [Electric Vehicle Population Data (CSV)](./data-to-visualize/Electric_Vehicle_Population_Data.csv) within this repository, for more information about the dataset visit [kaggle dataset](https://www.kaggle.com/datasets/willianoliveiragibin/electric-vehicle-population).
+2. Interactive Charts & Metrics – Visual breakdown of EV adoption trends, manufacturers, states, and categories.
 
-**Note:** We've reduced the dataset in the repository to keep the data size small in the frontend bundle.
+3. Dynamic Insights Banner – Auto-rotating banner with key EV adoption highlights.
 
-## Tasks
+4. Dark/Light Theme Support – Toggle between light and dark modes.
 
-### Dashboard Creation:
+5. Export Data – Download filtered results as CSV using PapaParse.
 
-- Create a frontend dashboard that presents key insights from the dataset.
-- Design the dashboard to effectively communicate important metrics and visualizations.
-- Include visual representations such as charts, graphs, or tables to showcase trends and relationships in the data.
-- Ensure the dashboard is user-friendly and intuitive for exploring the dataset.
+6. Lazy Loading & Suspense – Improves performance by loading heavy components only when needed.
 
-### Deployment:
+7. Responsive UI – Optimized for desktop and mobile experiences.
 
-- Deploy your frontend dashboard to a hosting platform of your choice.
-- Make sure the dashboard is publicly accessible.
 
-## Evaluation Criteria
+* Tech Stack
 
-Your submission will be evaluated based on:
+1. Frontend Framework: React + TypeScript
+2. Styling: Tailwind CSS
+3. Icons: Lucide React
+4. CSV Handling: PapaParse
+5. Custom Hooks – For state management and data processing (useEVData, useProcessedData, useChartData, etc.)
+6. Reusable Components – Header, MetricCard, SummaryCards, ErrorDisplay, etc.
 
-- **Analytical Depth:** The depth of your analysis and insights derived from the dataset.
-- **Dashboard Design:** Clarity, aesthetics, and usability of the frontend dashboard.
-- **Insightfulness:** Effectiveness in conveying key insights about electric vehicles.
 
-## Submission Guidelines
+* Performance Optimizations
 
-- Fork this repository to your GitHub account.
-- Complete your analysis and create the frontend dashboard.
-- Deploy the dashboard to a hosting platform.
-- Update this [README.md](README.md) file with the URL to your live dashboard.
-- **Repository Access:** Keep your repository private to avoid visibility by other candidates. Add the following email addresses as collaborators to the repository, these are our internal emails and will be evaluating your assessment:
-  - vedantp@mapup.ai
-  - ajayap@mapup.ai
-  - atharvd@mapup.ai
-- Finally, please fill out the google form that you received via email to submit the assessment for review.
+1. Code Splitting & Lazy Loading :
+FilterPanel and ChartsGrid are loaded lazily with React.lazy + Suspense to reduce initial bundle size.
+
+2. Memoization & Callbacks :
+Used useMemo and useCallback to prevent unnecessary re-renders in filters, insights, and data processing.
+
+3. Data Export Optimization :
+CSV export handled efficiently with Blob & URL.createObjectURL to avoid memory leaks.
+
+4. Auto-rotating Insights :
+Lightweight interval-based rotating insights with clearInterval cleanup for performance safety.
+
+5. Responsive Design :
+Optimized layouts with Tailwind grid and flex utilities to avoid heavy CSS computations.
+
+6. Theming Optimization :
+Centralized theme constants (LIGHT_COLORS, DARK_COLORS, getThemeClasses) for consistent styling without redundant re-renders.
