@@ -1,0 +1,27 @@
+:root {
+  --main1-color: rgb(133, 118, 255);
+  --main2-color: rgb(153, 102, 255);
+  --gray-border-color: rgb(39, 39, 39);
+  --primary-blue: rgb(54, 162, 235);
+  --secondary-blue: rgb(123, 201, 255);
+  --light-green: rgb(163, 255, 214);
+  --secondary-green: rgb(75, 192, 192);
+  --success: rgb(50,205,50);
+  --main-orange: rgb(255, 159, 64);
+  --warn: rgb(255, 205, 86);
+  --danger: rgb(255, 51, 51);
+  --black: rgba(0, 0, 0, 0.925);
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--black);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+  color: var(--main1-color);
+}

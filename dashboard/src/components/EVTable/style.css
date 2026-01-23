@@ -1,0 +1,13 @@
+.table-container {
+    width: 100%;
+    border: 2px solid white;
+    overflow-x: scroll;
+    color: white;
+  }
+  
+th, td {
+    padding: 0 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--gray-border-color);
+    border-left: 1px solid var(--gray-border-color);
+}

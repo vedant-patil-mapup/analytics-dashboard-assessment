@@ -1,0 +1,35 @@
+.App {
+  width: 80%;
+  margin: auto;
+  color: var(--white);
+  text-align: center;
+}
+
+.top-charts, .mid-charts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.top-charts > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.top-charts > div, .mid-charts > div, .bottom-charts {
+  height: 400px;
+  flex: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0);
+  border-radius: 10px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+

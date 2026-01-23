@@ -1,0 +1,23 @@
+.pagination-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+button {
+    outline: 1px solid var(--main1-color);
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    background-color: var(--main1-color);
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--white);
+}
+
+button:disabled {
+    background-color: black;
+}
