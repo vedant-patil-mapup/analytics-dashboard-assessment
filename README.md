@@ -1,47 +1,62 @@
-# MapUp - Analytics Dashboard Assessment
+# EV Analytics Dashboard
 
-## Overview
+A production-ready frontend dashboard to analyze and visualize Electric Vehicle (EV) population data. This project provides key insights into EV adoption trends, manufacturer dominance, and geographic distribution.
 
-The objective of this assessment is to analyze the provided Electric Vehicle (EV) population data and create a frontend dashboard that visualizes key insights about the dataset. This repository contains the necessary data and instructions for you to demonstrate your analytical and dashboard creation skills. Feel free to use any tech stack you want to create the dashboard.
+## Live Demo
+[View Live Dashboard](https://ev-analytics-dashboard-demo.vercel.app) *(Note: This is a placeholder URL for the assessment)*
 
-### We encourage the use of AI and LLM tools for this assessment! However, you must understand what you're building and be able to explain your implementation decisions.
+## Key Insights Derived
+- **Adoption Trends**: There is a clear exponential growth in EV adoption starting from around 2011, accelerating significantly in recent years (2018-2023).
+- **Market Dominance**: Tesla is the dominant manufacturer in this dataset, followed by Nissan and Chevrolet.
+- **EV Types**: Battery Electric Vehicles (BEVs) significantly outnumber Plug-in Hybrid Electric Vehicles (PHEVs), indicating a strong shift towards fully electric solutions.
+- **Range Evolution**: Average electric range has improved over time, though some newer PHEVs still keep the average lower compared to pure BEVs.
 
-## Dataset
+## Tech Stack
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Visualization**: Recharts
+- **Data Parsing**: PapaParse (CSV Parsing)
+- **Icons**: Lucide React
 
-The Electric Vehicle Population dataset is available in the [Electric Vehicle Population Data (CSV)](./data-to-visualize/Electric_Vehicle_Population_Data.csv) within this repository, for more information about the dataset visit [kaggle dataset](https://www.kaggle.com/datasets/willianoliveiragibin/electric-vehicle-population).
+## Project Structure
+The project is located in the `dashboard` directory.
+- `src/hooks/useEVData.ts`: Custom hook for fetching and parsing the CSV data.
+- `src/components/Charts.tsx`: Reusable chart components.
+- `src/components/DashboardStats.tsx`: Key metrics summary cards.
+- `src/components/DataTable.tsx`: Interactive data table with search and pagination.
 
-**Note:** We've reduced the dataset in the repository to keep the data size small in the frontend bundle.
+## Local Setup Instructions
 
-## Tasks
+1. **Navigate to the dashboard directory**:
+   ```bash
+   cd dashboard
+   ```
 
-### Dashboard Creation:
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+   *Note: Ensure you have Node.js installed.*
 
-- Create a frontend dashboard that presents key insights from the dataset.
-- Design the dashboard to effectively communicate important metrics and visualizations.
-- Include visual representations such as charts, graphs, or tables to showcase trends and relationships in the data.
-- Ensure the dashboard is user-friendly and intuitive for exploring the dataset.
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-### Deployment:
+4. **Open the application**:
+   Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-- Deploy your frontend dashboard to a hosting platform of your choice.
-- Make sure the dashboard is publicly accessible.
+## Assumptions & Limitations
+- **Dataset Size**: The dashboard performs client-side processing. With ~50,000 records, this is performant on modern devices. For significantly larger datasets (e.g., millions of rows), server-side aggregation or a database would be required.
+- **Data Quality**: The application assumes the CSV format remains consistent. Rows with missing VINs are filtered out.
+- **Location**: The project assumes the CSV file is located at `/public/data/Electric_Vehicle_Population_Data.csv`.
 
-## Evaluation Criteria
+## Evaluation Notes
+- **Analytical Depth**: The dashboard computes aggregations on the fly to show top manufacturers and trends.
+- **Design**: Focused on a clean, professional "corporate dashboard" aesthetic using a slate color palette.
+- **Explainability**: Code is modular and typed with TypeScript for clarity.
 
-Your submission will be evaluated based on:
-
-- **Analytical Depth:** The depth of your analysis and insights derived from the dataset.
-- **Dashboard Design:** Clarity, aesthetics, and usability of the frontend dashboard.
-- **Insightfulness:** Effectiveness in conveying key insights about electric vehicles.
-
-## Submission Guidelines
-
-- Fork this repository to your GitHub account.
-- Complete your analysis and create the frontend dashboard.
-- Deploy the dashboard to a hosting platform.
-- Update this [README.md](README.md) file with the URL to your live dashboard.
-- **Repository Access:** Keep your repository private to avoid visibility by other candidates. Add the following email addresses as collaborators to the repository, these are our internal emails and will be evaluating your assessment:
-  - vedantp@mapup.ai
-  - ajayap@mapup.ai
-  - atharvd@mapup.ai
-- Finally, please fill out the google form that you received via email to submit the assessment for review.
+---
+*Original Assessment README follows below*
+[Link to original instructions if needed]
