@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/electric-vehicle/static/css/main.331ebe2b.css",
+    "main.js": "/electric-vehicle/static/js/main.5f3df953.js",
+    "static/media/tesla_car_PNG47.png": "/electric-vehicle/static/media/tesla_car_PNG47.0cad0acb8702239a1b60.png",
+    "static/media/rohit-kumar-saini-front-end-developer-in-jaipur.png": "/electric-vehicle/static/media/rohit-kumar-saini-front-end-developer-in-jaipur.3261aca141f113196b04.png",
+    "static/media/evs.jpg": "/electric-vehicle/static/media/evs.7f7c2414eb4b22753065.jpg",
+    "static/media/ev-map.jpg": "/electric-vehicle/static/media/ev-map.c39449f0aaa5fb313dce.jpg",
+    "static/media/EV-scaled.jpg": "/electric-vehicle/static/media/EV-scaled.1db09be12dd014cc5bf0.jpg",
+    "index.html": "/electric-vehicle/index.html",
+    "main.331ebe2b.css.map": "/electric-vehicle/static/css/main.331ebe2b.css.map",
+    "main.5f3df953.js.map": "/electric-vehicle/static/js/main.5f3df953.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.331ebe2b.css",
+    "static/js/main.5f3df953.js"
+  ]
+}
